@@ -61,4 +61,39 @@ df1.isnull().sum()
 #Checking info of the dataset to check all the columns have entries
 df1.info()
 # OUPUT
+## DATASET
+![image](https://user-images.githubusercontent.com/94154683/189487926-b5ee42bf-7ebd-497e-a64d-664e4fce4306.png)
 
+## HEAD
+![image](https://user-images.githubusercontent.com/94154683/189487934-fd2d0be9-cd49-4334-8495-d5fdc3073140.png)
+
+## DESCRIBE
+![image](https://user-images.githubusercontent.com/94154683/189487945-df7314ce-7044-4640-a505-6f07e467e54a.png)
+
+## INFO
+![image](https://user-images.githubusercontent.com/94154683/189487953-23f6fed6-b651-4fb4-945c-4db122e5c7f9.png)
+
+## TAIL
+![image](https://user-images.githubusercontent.com/94154683/189487966-71e311cf-7b82-43b6-81ca-50328cd83d05.png)
+
+## SHAPE
+![image](https://user-images.githubusercontent.com/94154683/189487975-6eb0442d-5e2b-4a97-88d0-0f3b3bba0c89.png)
+
+## isnull().sum() - Pre Cleaning
+![image](https://user-images.githubusercontent.com/94154683/189487982-907ae087-5a16-4d1e-a61c-65dff99d8645.png)
+
+## DUPLICATES
+![image](https://user-images.githubusercontent.com/94154683/189488005-dbf5280d-b7ec-4548-bc44-823cd8b16b02.png)
+
+## SNS PLOT-RATING
+![image](https://user-images.githubusercontent.com/94154683/189488021-d9303349-d182-478f-a447-e844ebbba197.png)
+
+## isnull().sum() - Post Cleaning
+![image](https://user-images.githubusercontent.com/94154683/189488034-17912ca6-93cd-48ef-839b-d5855ce3dabd.png)
+
+## Info - Post Cleaning
+![image](https://user-images.githubusercontent.com/94154683/189488044-6d41a242-a3fc-4b93-af03-e296e8031262.png)
+
+
+# Result:
+The given data is read and data cleaning is performed and the cleaned data is saved to a file.
