@@ -20,22 +20,45 @@ Save the Clean data to the file
 
 # CODE
 import pandas as pd
-df=pd.read_csv("Data_set.csv")
-print(df)
-df.head(10)
-df.info()
-df.isnull()
-df.isnull().sum()
-df['show_name']=df['show_name'].fillna(df['aired_on'].mode()[0])
-df['aired_on']=df['aired_on'].fillna(df['aired_on'].mode()[0])
-df['original_network']=df['original_network'].fillna(df['aired_on'].mode()[0])
-df.head()
-df['rating']=df['rating'].fillna(df['rating'].mean())
-df['current_overall_rank']=df['current_overall_rank'].fillna(df['current_overall_rank'].mean())
-df.head()
-df['watchers']=df['watchers'].fillna(df['watchers'].median())
-df.head()
-df.info()
-df.isnull().sum()
+import numpy as np
+import seaborn as sns
+
+df1 = pd.read_csv("Data_set.csv")
+df1
+
+df1.head()
+
+df1.describe()
+
+df1.info()
+
+df1.tail()
+
+df1.shape
+
+df1.columns
+
+df1.isnull().sum()
+
+df1.duplicated()
+
+#Using mode method to fill the data in columns as Object(String)
+#mode()[0] - Takes the most reccuring value and fills the empty cells
+df1['show_name'] = df1['show_name'].fillna(df1['show_name'].mode()[0])
+df1['aired_on'] = df1['aired_on'].fillna(df1['aired_on'].mode()[0])
+df1['original_network'] = df1['original_network'].fillna(df1['original_network'].mode()[0])
+
+sns.boxplot(x="rating",data=df1)
+
+#Using mean method to fill the data
+df1['rating'] = df1['rating'].fillna(df1['rating'].mean())
+df1['current_overall_rank'] = df1['current_overall_rank'].fillna(df1['current_overall_rank'].mean())
+df1['watchers'] = df1['watchers'].fillna(df1['watchers'].mean())
+
+#Checking the total no.of null values again
+df1.isnull().sum()
+
+#Checking info of the dataset to check all the columns have entries
+df1.info()
 # OUPUT
 
