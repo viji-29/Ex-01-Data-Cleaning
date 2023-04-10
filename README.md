@@ -38,4 +38,4 @@ df.head()
 df.info()
 df.isnull().sum()
 # OUPUT
-![image](https://user-images.githubusercontent.com/106019857/230939185-8971ab3a-94bc-4c2d-8ef6-1d6be45eb1b4.png)
+
